@@ -13,7 +13,8 @@ document.getElementById('loginForm').addEventListener('submit', async function (
         body: JSON.stringify({
             email,
             senha: password
-        })
+        }),
+        referrerPolicy: "unsafe_url"
     })
     
     console.log(user)
