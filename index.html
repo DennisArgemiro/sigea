@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Integração do bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!--Carregamento do arquivo CSS-->
+    <link rel="stylesheet" href="assets/css/login.css">
+    <title>Página de login</title>
+</head>
+
+<body>
+    <div class="container">
+        <!--Parte de cima da página-->
+        <div class="row">
+            <div class="col-12" style="text-align: center;">
+                <!--Logo na página de cima-->
+                <img src="assets/images/logo.png" class="logo">
+            </div>
+        </div>
+        <!--Parte do meio da página-->
+        <div class="row">
+            <div class="col-12" id="bg">
+                <!--Texto mais acima-->
+                <p class="header">Login</p>
+
+                <!--Formulário para autenticar o login-->
+                <form method="get" id="loginForm">
+                    <!--Caixa de texto para o email-->
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email" id="email" required>
+                    </div>
+                    <!--Caixa de texto para a senha-->
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Senha" id="password" required>
+                    </div>
+                    <!--Redirecionamento para página de cadastro-->
+                    <a href="register.html" class="decoration">
+                        <p class="non-register">Não tenho cadastro</p>
+                    </a>
+                    <!--Botão para enviar o formulário-->
+                    <div style="text-align: center;">
+                        <button type="submit" class="button">ENTRAR</button>
+                    </div>
+                </form>
+
+                <script src="assets/scripts/login.js"></script>
+
+                <!--Redirecionamento para página de "esqueci minha senha"-->
+                <!-- <a href="forgotPassword.html" class="decoration">
+                    <p class="forgot-password">Esqueci minha senha</p>
+                </a> -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

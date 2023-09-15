@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'sen-regular';
+    src: url(/assets/fonts/Sen-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'sen-bold';
+    src: url(/assets/fonts/Sen-Bold.ttf);
+}
+
+* {
+    font-family: sen-regular, Helvetica;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+.header {
+    margin-top: 60px;
+    margin-bottom: -5px;
+    font-size: 1.875rem;
+    font-family: sen-bold, Helvetica;
+    font-weight: bold;
+    color: #563913;
+    text-align: left;
+}
+
+.header-span {
+    color: #754e1a;
+    text-align: left;
+    font-size: 1.25rem;
+    margin-bottom: 25px;
+}
+
+.box-style {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 7px;
+    height: 38px;
+    border: 0.7px solid #dedede;
+}
+
+#spacing {
+    margin-top: 265px;
+}
+
+.labels {
+    color: #563913;
+    font-family: sen-bold;
+    width: 170px;
+    margin-left: 4px;
+}
+
+.asterisk {
+    color: rgb(200, 0, 0);
+    margin-left: -3px;
+    display: inline;
+}
+
+.spans {
+    margin-left: 3px;
+    color: #666666c0;
+}
+
+.button {
+    width: 200px;
+    border: none;
+    padding: 10px 10px;
+    font-size: 1.563rem;
+    font-family: sen-bold, Helvetica;
+    font-weight: bold;
+    background-color: #0A8641;
+    border-radius: 30px;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.button:hover {
+    transform: scale(1.02);
+    transition: 100ms linear;
+    box-shadow: 1px 1px 10px 1px #dbdbdb;
+}
+
+@media (max-width: 750px) {
+    .labels {
+        font-size: 0.938rem;
+    }
+
+    .spans {
+        font-size: 0.938rem;
+    }
+
+    .header {
+        margin-top: 60px;
+        font-size: 1.875rem;
+        text-align: center;
+    }
+
+    .header-span {
+        color: #754e1a;
+        text-align: center;
+        font-size: 1.2rem;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    #main {
+        margin: 0 auto;
+        width: 98%;
+    }
+    .spacing {
+        margin-top: 266px;
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Integração do bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!--Carregamento do arquivo CSS-->
+    <link rel="stylesheet" href="assets/css/send.css">
+    <title>Página para enviar instância</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!--Parte de cima da página-->
+        <div class="row">
+            <div class="col-12" style="text-align: center;">
+                <!--Logo na página de cima-->
+                <img src="assets/images/logo.png" class="logo">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12" id="bg">
+                <p class="header">Abrir solicitação</p>
+
+                <form id="formInstances">
+                    <center>
+                        <p class="text">Preencha os dados a seguir</p>
+
+                        <select class="form-control" id="demandType" required>
+                            <option value="Conhecimento técnico"
+                                title="Necessário para a compreensão e prosseguimento dos estudos com compreensão">
+                                Conhecimento técnico</option>
+                            <option value="Gestão do curso" title="Informação já repassada à coordenação de curso">
+                                Gestão do curso</option>
+                            <option value="Metodologia"
+                                title="Estratégias, práticas pedagógicas e ferramentas utilizadas pelo (a) professor(a)">
+                                Metodologia</option>
+                            <option value="Organização do currículo"
+                                title="Como o conteúdo é disposto na ementa da disciplina">Organização do currículo
+                            </option>
+                            <option value="Objetivos, conteúdos e planejamento de disciplina"
+                                title="Como estas ações são organizadas pelo (a) professor (a)">Objetivos, conteúdos e
+                                planejamento de disciplina</option>
+                            <option value="Relação aluno-aluno" title="Como me relaciono com meus colegas">Relação
+                                aluno-aluno</option>
+                            <option value="Relação professor-aluno" title="Como me relaciono com o professor(a)">Relação
+                                professor-aluno</option>
+                            <option value="Sistema de avaliação"
+                                title="Aplicabilidade dos instrumentos avaliativos pelo professor">Sistema de avaliação
+                            </option>
+                            <option value="Outros">Outros</option>
+                        </select>
+
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Escreva sobre a demanda..." rows="4"
+                                id="textArea" required></textarea>
+                        </div>
+                        <button type="submit" class="button">ENVIAR</button>
+                    </center>
+                </form>
+            </div>
+        </div>
+        <script src="assets/scripts/send.js"></script>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'sen-regular';
+    src: url(/assets/fonts/Sen-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'sen-bold';
+    src: url(/assets/fonts/Sen-Bold.ttf);
+}
+
+* {
+    font-family: sen-regular, Helvetica;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+.logo {
+    margin-top: 40px;
+    margin-bottom: 10%;
+}
+
+#bg {
+    background-color: #e9e9e9;
+    border-radius: 20px;
+    width: 450px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-top: 40px;
+    font-size: 1.875rem;
+    font-family: sen-bold, Helvetica;
+    font-weight: bold;
+    color: #563913;
+    text-align: center;
+}
+
+#email,
+#password {
+    width: 340px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+#email {
+    margin-top: 25px;
+}
+
+#password {
+    margin-top: 5px;
+}
+
+.decoration {
+    text-decoration: none;
+}
+
+.button {
+    width: 200px;
+    border: none;
+    padding: 10px 10px;
+    font-size: 1.563rem;
+    font-family: sen-bold, Helvetica;
+    font-weight: bold;
+    background-color: #0A8641;
+    border-radius: 30px;
+    color: #fff;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.button:hover {
+    transform: scale(1.02);
+    transition: 100ms linear;
+    box-shadow: 1px 1px 10px 1px #dbdbdb;
+}
+
+.non-register {
+    text-align: right;
+    margin-top: 5px;
+    margin-right: 50px;
+    color: #563913;
+    font-family: sen-bold, Helvetica;
+    font-weight: bold;
+    font-size: 0.938rem;
+}
+
+.non-register:hover {
+    transform: scale(1.01);
+    transition: 100ms linear;
+}
+
+.forgot-password {
+    text-align: center;
+    color: #563913;
+    font-family: sen-bold, Helvetica;
+    font-weight: bold;
+    font-size: 1.125rem;
+    margin-bottom: 15px;
+}
+
+.forgot-password:hover {
+    transform: scale(1.02);
+    transition: 100ms linear;
+    text-decoration: underline;
+}
+
+@media (max-width: 750px) {
+    .logo {
+        margin-bottom: 20%;
+    }
+
+    #bg {
+        width: 90%;
+    }
+
+    .header {
+        font-size: 1.7rem;
+    }
+
+    #email {
+        width: 90%;
+    }
+
+    #password {
+        width: 90%;
+    }
+
+    .non-register {
+        font-size: 0.813rem;
+        margin-right: 25px;
+    }
+
+    .button {
+        width: 170px;
+        font-size: 1.4rem;
+        padding: 10px 15px;
+        border-radius: 60px;
+    }
+
+    .forgot-password {
+        font-size: 1rem;
+    }
+}

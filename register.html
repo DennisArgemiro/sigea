@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Integração do bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!--Carregamento do arquivo CSS-->
+    <link rel="stylesheet" href="assets/css/register.css">
+    <title>Página de cadastro</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!--Parte de cima da página-->
+                <p class="header"> Cadastro do Estudante</p>
+                <p class="header-span">Preencha os campos para poder realizar o cadastro</p>
+            </div>
+        </div>
+        <!--Formulário para enviar os dados do cadastro-->
+        <form method="post" id="registerForm">
+            <div class="row" id="main">
+                <!--Lado esquerdo da página-->
+                <div class="col-6">
+                    <!--Nome e sua caixa de texto e o asterísco-->
+                    <label class="labels">Nome<p class="asterisk"> *</p></label>
+                    <input type="text" class="form-control" id="name" required>
+                    <!--Nome abaixo da caixa-->
+                    <span class="spans">Nome</span>
+                    <!--Caixa de texto para o email-->
+                    <div class="form-group" style="margin-top: 20px;">
+                        <label class="labels">Email<p class="asterisk"> *</p></label>
+                        <input type="email" class="form-control" placeholder="nome@exemplo.com" id="mail" required>
+                    </div>
+                    <!--Caixa de texto para a senha-->
+                    <div class="form-group" style="margin-top: 20px;">
+                        <label class="labels">Senha<p class="asterisk"> *</p></label>
+                        <input type="password" class="form-control" id="password" required>
+                    </div>
+                    <!--Caixa de texto para a matrícula-->
+                    <div>
+                        <label class="labels" style="margin-top: 20px;">Matrícula<p class="asterisk"> *</p></label>
+                        <input type="number" class="box-style" id="mat" required>
+                    </div>
+                    <!--Caixa de texto para a data de nascimento-->
+                    <div>
+                        <label class="labels" style="margin-top: 20px;">Data de nascimento<p class="asterisk"> *</p>
+                        </label>
+                        <input type="date" class="box-style" id="birthday" required>
+                    </div>
+                    <!--Seletor do curso do usuário-->
+                    <div class="form-group">
+                        <label class="labels" style="margin-top: 20px;">Curso<p class="asterisk"> *</p></label>
+                        <select class="form-control" id="cur">
+                            <option>Informática</option>
+                            <option>Edificações</option>
+                            <option>Agropecuária</option>
+                        </select>
+                    </div>
+                </div>
+                <!--Lado direito da página-->
+                <div class="col-6">
+                    <div>
+                        <!--Caixa de texto para o sobrenome-->
+                        <label></label>
+                        <input type="text" class="form-control" id="last" required>
+                        <!--Sobrenome abaixo da caixa-->
+                        <span class="spans">Sobrenome</span>
+                    </div>
+                    <div>
+                        <!--Caixa de texto para o número de telefone-->
+                        <label class="labels" id="spacing">Número de telefone <p class="asterisk"> *</p></label>
+                        <input type="tel" class="box-style" id="tel" required>
+                    </div>
+                    <!--Seletor da turma dos alunos-->
+                    <div class="form-group">
+                        <label class="labels" style="margin-top: 20px;">Turma<p class="asterisk"> *</p></label>
+                        <select class="form-control" id="year">
+                            <option>1º</option>
+                            <option>2º</option>
+                            <option>3º</option>
+                        </select>
+                    </div>
+                </div>
+                <!--Botão para enviar os dados do formulário-->
+                <div style="text-align: center;">
+                    <button type="submit" class="button">ENVIAR</button>
+                </div>
+            </div>
+        </form>
+
+        <script src="assets/scripts/register.js"></script>
+    </div>
+</body>
+
+</html>
