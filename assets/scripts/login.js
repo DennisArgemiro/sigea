@@ -9,12 +9,12 @@ document.getElementById('loginForm').addEventListener('submit', async function (
         headers: {
             "Content-type": "application/json"
         },
+        referrerPolicy: "unsafe-url",
         mode: "cors",
         body: JSON.stringify({
             email,
             senha: password
-        }),
-        referrerPolicy: "unsafe_url"
+        })
     })
     
     console.log(user)
