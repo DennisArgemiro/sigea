@@ -4,7 +4,7 @@ document.getElementById('loginForm').addEventListener('submit', async function (
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
 
-    var user = await fetch('168.138.141.111:3000/login', {
+    var user = await fetch('http://168.138.141.111:3000/login', {
         method: "POST",
         headers: {
             "Content-type": "application/json"
